@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users } from "lucide-react";
 import gsap from "gsap";
-import './css/Hero.css'
+import './css/Hero.css';
+import jeii from '../assets/jeii.png'
 
 const Hero = () => {
 
@@ -28,7 +29,7 @@ const Hero = () => {
                     bottom:'-40px'
                    
                   }}
-                  src="/jeii.png" alt="" />
+                  src={jeii} alt="" />
               </div>
           
               
