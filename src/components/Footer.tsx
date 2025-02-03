@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Mail, Phone } from "lucide-react";
-import logojei from '/logo.png';
+import logojei from '../assets/logo.png';
 import './css/Footer.css';
 
 const Footer = () => {

@@ -5,12 +5,12 @@ import { Code, Users, Music, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import "./css/About.css";
 
-import aesth1 from '/aesth.jpg';
-import aesth2 from '/aesth2.jpg';
-import hackaton from '/jei_5.png';
-import basket from '/jei_4.png';
-import concert from '/jei_2.png';
-import caravane from '/jei_3.png'
+import aesth1 from '../assets/aesth.jpg';
+import aesth2 from '../assets/aesth2.jpg';
+import hackaton from '../assets/jei_5.png';
+import basket from '../assets/jei_4.png';
+import concert from '../assets/jei_2.png';
+import caravane from '../assets/jei_3.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
