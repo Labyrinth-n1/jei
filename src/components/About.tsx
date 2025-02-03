@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code, Users, Music, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import "./css/About.css";
+import "../styles/css/About.css";
 
 import aesth1 from '../assets/aesth.jpg';
 import aesth2 from '../assets/aesth2.jpg';

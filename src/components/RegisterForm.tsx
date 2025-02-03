@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import "./css/RegisterForm.css";
+import "../styles/css/RegisterForm.css";
 
 const RegisterForm = () => {
   const { toast } = useToast();

@@ -5,7 +5,7 @@ import logojei from "../assets/logo.png"
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import "./css/Navigation.css"
+import "../styles/css/Navigation.css"
 import { Calendar, HomeIcon, FileQuestion } from "lucide-react";
 
 gsap.registerPlugin(ScrollToPlugin); // Enregistrement du plugin GSAP

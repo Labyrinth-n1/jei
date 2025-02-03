@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users } from "lucide-react";
 import gsap from "gsap";
-import './css/Hero.css';
+import '../styles/css/Hero.css';
 import jeii from '../assets/jeii.png'
 
 const Hero = () => {

@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Calendar, Trophy, Music, MapPin, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import "./css/Timeline.css";
+import "../styles/css/Timeline.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
