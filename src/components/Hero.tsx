@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Users } from "lucide-react";
 import gsap from "gsap";
 import './css/Hero.css'
-import jei from '/jeii.png'
 
 const Hero = () => {
 
