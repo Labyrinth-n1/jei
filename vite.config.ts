@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-   // ← Ajoute ceci pour que les chemins soient corrects sur GitHub Pages
+  base: "/jei/",  // Assure-toi que le chemin de base soit bien défini pour ton projet sur Vercel
   server: {
     host: "::",
     port: 8080,
