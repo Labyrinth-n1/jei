@@ -10,9 +10,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://Labyrinth-n1.github.io/JEI"
+    "deploy": "gh-pages -d dist"
   },
+
+  "homepage": "https://labyrinth-n1.github.io/jei",
+  
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",

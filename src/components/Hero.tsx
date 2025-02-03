@@ -29,7 +29,7 @@ const Hero = () => {
                     bottom:'-40px'
                    
                   }}
-                  src={jei} alt="" />
+                  src="/jeii.png" alt="" />
               </div>
           
               
