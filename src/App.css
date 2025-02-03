@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Désactive le défilement natif */
+}
+
+.container {
+  height: 100vh; /* Chaque section prend 100% de la hauteur de la fenêtre */
+  overflow-y: auto;
+  scroll-snap-type: y mandatory; /* Active le scroll snap si tu veux */
+}
+
+.section {
+  height: 100vh; /* Chaque section prend 100% de la hauteur de la fenêtre */
+  scroll-snap-align: start; /* Aligne la section au début de la fenêtre lors du scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #ff8c00;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
