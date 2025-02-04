@@ -17,19 +17,19 @@ const Timeline = () => {
       date: "26 Février",
       events: [
         {
-          time: "14:00 - 15:00",
+          time: "14:00",
           title: "Caravane",
           description: "Parade festive sur le campus",
           icon: Users,
         },
         {
-          time: "15:00 - 16:30",
+          time: "15:00",
           title: "Finale de Football",
           description: "Compétition inter-filière",
           icon: Trophy,
         },
         {
-          time: "16:45 - 18:30",
+          time: "16:45",
           title: "Match de Basketball",
           description: "IFRI vs EPAC",
           icon: Trophy,
@@ -41,19 +41,19 @@ const Timeline = () => {
       date: "27 Février",
       events: [
         {
-          time: "08:00 - 08:45",
+          time: "08:00",
           title: "Lancement Officiel",
           description: "Ouverture des JEI",
           icon: Calendar,
         },
         {
-          time: "09:00 - 10:30",
+          time: "09:00",
           title: "Hackathon",
           description: "Présentation des projets finalistes",
           icon: Trophy,
         },
         {
-          time: "17:00 - 20:00",
+          time: "17:00",
           title: "Mini-Concert",
           description: "Prestations et ambiance DJ",
           icon: Music,
@@ -88,9 +88,9 @@ const Timeline = () => {
           ease: "power4.out",
           scrollTrigger: {
             trigger: card,
-            start: "top 90%", // L'animation démarre plus tôt
+            start: "top 90%", 
             end: "top 50%",
-            scrub: 0.5, // L'effet reste fluide
+            scrub: 0.5, 
           },
         }
       );

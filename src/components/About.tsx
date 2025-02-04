@@ -11,6 +11,7 @@ import hackaton from '../assets/jei_5.png';
 import basket from '../assets/jei_4.png';
 import concert from '../assets/jei_2.png';
 import caravane from '../assets/jei_3.png'
+import foire from '../assets/jei_6.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,7 +40,7 @@ const About = () => {
     },
     {
       icon: Music,
-      title: "Mini-concerts",
+      title: "Mini-concert",
       description: "Animations et prestations musicales",
       color: "#0e885a",
       icolor: "#fc7f07",
@@ -49,11 +50,20 @@ const About = () => {
     {
       icon: MapPin,
       title: "Excursion",
-      description: "Journée détente à Casa del Papa",
+      description: "Journée détente à à Hotel Awale, Grand-Popo",
       color: " #fc7f07",
       icolor: " #0e885a",
       bg: aesth2,
       img: caravane,
+    },
+    {
+      icon: MapPin,
+      title: "Foire",
+      description: "Présentation et vente de produits",
+      color: " #fc7f07",
+      icolor: " #0e885a",
+      bg: aesth1,
+      img: foire,
     },
   ];
 
