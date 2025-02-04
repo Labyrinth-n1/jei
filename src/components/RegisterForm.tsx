@@ -82,28 +82,28 @@ const RegisterForm = () => {
                     <input
                       type="checkbox"
                       id="concert"
-                      value="Concert (2500 FCFA)"
-                      checked={selectedOptions.includes("Concert (2500 FCFA)")}
+                      value="2500 FCFA"
+                      checked={selectedOptions.includes("2500 FCFA")}
                       onChange={() =>
-                        handleCheckboxChange("Concert (2500 FCFA)")
+                        handleCheckboxChange("2500 FCFA")
                       }
                       className="h-5 w-5"
                     />
-                    <Label htmlFor="concert">Concert (2500 FCFA)</Label>
+                    <Label htmlFor="concert">Concert (2500 FCFA) <p style={{color:'#fc7f07', fontWeight:'bold', marginTop:'10px'}}>(Obligatoire si tu veux venir à l'excursion🌝!!)</p></Label>
                   </div>
                   <div className="flex items-center space-x-3 mt-4">
                     <input
                       type="checkbox"
                       id="excursion"
-                      value="Excursion (5000 FCFA)"
-                      checked={selectedOptions.includes("Excursion (5000 FCFA)")}
+                      value="5000 FCFA"
+                      checked={selectedOptions.includes("5000 FCFA")}
                       onChange={() =>
-                        handleCheckboxChange("Excursion (5000 FCFA)")
+                        handleCheckboxChange("5000 FCFA")
                       }
                       className="h-5 w-5"
                     />
                     <Label htmlFor="excursion">
-                      Excursion (7500 FCFA)
+                      Excursion (5000 FCFA)
                     </Label>
                   </div>
                 </div>
