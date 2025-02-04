@@ -35,7 +35,7 @@ const Index = () => {
       <div id="footer" className="section">
         <Footer />
       </div>
-      <AutoPopup />
+      
     </div>
   );
 };
