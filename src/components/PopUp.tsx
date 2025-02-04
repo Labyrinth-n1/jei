@@ -11,7 +11,7 @@ const AutoPopup = () => {
     // Affiche le popup toutes les 2 minutes (120 000 ms)
     const interval = setInterval(() => {
       setIsOpen(true);
-    }, 60000);
+    }, 20000);
 
     return () => clearInterval(interval); // Nettoie l'intervalle
   }, []);
