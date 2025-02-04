@@ -11,7 +11,8 @@ import hackaton from '../assets/jei_5.png';
 import basket from '../assets/jei_4.png';
 import concert from '../assets/jei_2.png';
 import caravane from '../assets/jei_3.png'
-import foire from '../assets/jei_6.png'
+import foire from '../assets/jei_6.png';
+import panel from '../assets/jei_7.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,6 +65,15 @@ const About = () => {
       icolor: " #0e885a",
       bg: aesth1,
       img: foire,
+    },
+    {
+      icon: MapPin,
+      title: "Panel",
+      description: "Plusieurs panels super interessants.",
+      color: " #fc7f07",
+      icolor: " #0e885a",
+      bg: aesth2,
+      img: panel,
     },
   ];
 
