@@ -78,7 +78,8 @@ const Navigation = () => {
                     style={{backgroundColor:"#0e885a", borderRadius: '10px'}}
                     className="w-full" 
                     size="lg"
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.preventDefault();
                       scrollToSection("#inscription"); // Défilement vers la section inscription
                     }}
                 >
@@ -109,9 +110,9 @@ const Navigation = () => {
                 key={item.label}
                 href={item.href}
                 onClick={(e) => {
-                  e.preventDefault(); // Empêcher le comportement de lien par défaut
-                  scrollToSection(item.href); // Défilement fluide
-                  setIsOpen(false); // Fermer le menu mobile
+                  e.preventDefault(); 
+                  scrollToSection(item.href); 
+                  setIsOpen(false); 
                 }}
                 className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors font-medium"
                
@@ -128,9 +129,10 @@ const Navigation = () => {
                     style={{backgroundColor:"#0e885a"}}
                     className="w-full" 
                     size="lg"
-                    onClick={() => {
-                      scrollToSection("#inscription"); // Défilement vers inscription
-                      setIsOpen(false); // Fermer le menu mobile
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection("#inscription"); 
+                      setIsOpen(false); 
                     }}
                 >
                     Inscription
