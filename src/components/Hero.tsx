@@ -77,13 +77,14 @@ const Hero = () => {
           <div 
               style={{marginTop:'50px'}}
               className="flex justify-center gap-12 text-sm text-black-500">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
+            <div 
+              className="flex items-center gap-2">
+              <Calendar color='white' className="w-4 h-4" />
               <span style={{fontWeight:'bold', color:'white'}}>26-28 Février 2025</span>
             </div>
             <div className="flex items-center gap-2">
-              <Users className="w-4 h-4" />
-              <span style={{fontWeight:'bold', color:'white'}}>400+ Participants</span>
+              <Users color='white' className="w-4 h-4" />
+              <span style={{fontWeight:'bold',color:'white'}}>400+ Participants</span>
             </div>
           </div>
         </div>
