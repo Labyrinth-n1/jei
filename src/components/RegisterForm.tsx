@@ -9,7 +9,7 @@ import "../styles/css/RegisterForm.css";
 const RegisterForm = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
-  const [selectedOptions, setSelectedOptions] = useState<string[]>([]); // Gérer plusieurs options
+  const [selectedOption, setSelectedOption] = useState<string | null>(null); // Une seule option à la fois
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,25 +17,22 @@ const RegisterForm = () => {
 
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    const selectedText =
-      selectedOptions.length > 0
-        ? selectedOptions.join(" et ")
-        : "aucune option sélectionnée";
-
     toast({
       title: "Inscription réussie !",
-      description: `Vous avez choisi : ${selectedText}. Vous recevrez un email de confirmation.`,
+      description: `Vous avez choisi : ${selectedOption || "aucune option sélectionnée"}. Vous recevrez un email de confirmation.`,
     });
 
     setLoading(false);
   };
 
   const handleCheckboxChange = (option: string) => {
-    setSelectedOptions((prev) =>
-      prev.includes(option)
-        ? prev.filter((item) => item !== option) 
-        : [...prev, option] 
-    );
+    setSelectedOption(option); // Une seule sélection à la fois
+  };
+
+  const getTotalPrice = () => {
+    if (selectedOption === "Concert") return 2500;
+    if (selectedOption === "Concert + Excursion") return 7000;
+    return 2500;
   };
 
   return (
@@ -82,29 +79,21 @@ const RegisterForm = () => {
                     <input
                       type="checkbox"
                       id="concert"
-                      value="2500 FCFA"
-                      checked={selectedOptions.includes("2500 FCFA")}
-                      onChange={() =>
-                        handleCheckboxChange("2500 FCFA")
-                      }
+                      checked={selectedOption === "Concert"}
+                      onChange={() => handleCheckboxChange("Concert")}
                       className="h-5 w-5"
                     />
-                    <Label htmlFor="concert">Concert (2500 FCFA) <p style={{color:'#fc7f07', fontWeight:'bold', marginTop:'10px'}}>(Obligatoire si tu veux venir à l'excursion🌝!!)</p></Label>
+                    <Label htmlFor="concert">Concert (2500 FCFA)</Label>
                   </div>
                   <div className="flex items-center space-x-3 mt-4">
                     <input
                       type="checkbox"
                       id="excursion"
-                      value="5000 FCFA"
-                      checked={selectedOptions.includes("5000 FCFA")}
-                      onChange={() =>
-                        handleCheckboxChange("5000 FCFA")
-                      }
+                      checked={selectedOption === "Concert + Excursion"}
+                      onChange={() => handleCheckboxChange("Concert + Excursion")}
                       className="h-5 w-5"
                     />
-                    <Label htmlFor="excursion">
-                      Excursion (5000 FCFA)
-                    </Label>
+                    <Label htmlFor="excursion">Concert + Excursion (7000 FCFA)</Label>
                   </div>
                 </div>
               </div>
@@ -117,7 +106,7 @@ const RegisterForm = () => {
               >
                 {loading
                   ? "Inscription en cours..."
-                  : `${selectedOptions.length > 0 ? selectedOptions.join(" + ") : "S'inscrire"}`}
+                  : `Payer ${getTotalPrice()} FCFA`}
               </Button>
             </form>
           </Card>
