@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Timeline from "@/components/Timeline";
 import RegisterForm from "@/components/RegisterForm";
 import Footer from "@/components/Footer";
+import AutoPopup from "@/components/PopUp";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -34,6 +35,7 @@ const Index = () => {
       <div id="footer" className="section">
         <Footer />
       </div>
+      <AutoPopup />
     </div>
   );
 };
