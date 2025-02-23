@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,29 +9,42 @@ import "../styles/css/RegisterForm.css";
 const RegisterForm = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null); // Une seule option à la fois
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [name, setName] = useState(""); // État pour le nom
+  const [email, setEmail] = useState(""); // État pour l'email
+  const [phone, setPhone] = useState(""); // État pour le téléphone
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // Construire le message selon l'option sélectionnée
+    let message = "";
+    const baseMessage = `Coucou Elziana, je suis ${name}, je veux prendre un ticket de `;
 
-    toast({
-      title: "Inscription réussie !",
-      description: `Vous avez choisi : ${selectedOption || "aucune option sélectionnée"}. Vous recevrez un email de confirmation.`,
-    });
+    if (selectedOption === "Concert") {
+      message = baseMessage + "2500 FCFA !!";
+    } else if (selectedOption === "Concert + Excursion") {
+      message = baseMessage + "7500 FCFA !!";
+    }
+
+    // URL WhatsApp
+    const phoneNumber = "+22944921119";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // Redirection vers WhatsApp
+    window.location.href = whatsappUrl;
 
     setLoading(false);
   };
 
   const handleCheckboxChange = (option: string) => {
-    setSelectedOption(option); // Une seule sélection à la fois
+    setSelectedOption(option);
   };
 
   const getTotalPrice = () => {
     if (selectedOption === "Concert") return 2500;
-    if (selectedOption === "Concert + Excursion") return 7000;
+    if (selectedOption === "Concert + Excursion") return 7500;
     return 2500;
   };
 
@@ -59,17 +72,37 @@ const RegisterForm = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="inputGroup space-y-2">
                 <Label htmlFor="name">Nom complet</Label>
-                <Input id="name" className="h-12" required />
+                <Input 
+                  id="name" 
+                  className="h-12" 
+                  required 
+                  value={name} 
+                  onChange={(e) => setName(e.target.value)} 
+                />
               </div>
 
               <div className="inputGroup space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" className="h-12" required />
+                <Input 
+                  id="email" 
+                  type="email" 
+                  className="h-12" 
+                  required 
+                  value={email} 
+                  onChange={(e) => setEmail(e.target.value)} 
+                />
               </div>
 
               <div className="inputGroup space-y-2">
                 <Label htmlFor="phone">Téléphone</Label>
-                <Input id="phone" type="tel" className="h-12" required />
+                <Input 
+                  id="phone" 
+                  type="tel" 
+                  className="h-12" 
+                  required 
+                  value={phone} 
+                  onChange={(e) => setPhone(e.target.value)} 
+                />
               </div>
 
               <div className="inputGroup space-y-4">
@@ -93,7 +126,7 @@ const RegisterForm = () => {
                       onChange={() => handleCheckboxChange("Concert + Excursion")}
                       className="h-5 w-5"
                     />
-                    <Label htmlFor="excursion">Concert + Excursion (7000 FCFA)</Label>
+                    <Label htmlFor="excursion">Concert + Excursion (7500 FCFA)</Label>
                   </div>
                 </div>
               </div>
