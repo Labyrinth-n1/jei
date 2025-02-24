@@ -55,7 +55,7 @@ const RegisterForm = () => {
           <span className="text-primary font-semibold tracking-wider uppercase text-sm">Inscription</span>
           <h2
             style={{ fontFamily: "Montserrat", color: "#ff8c00" }}
-            className="text-4xl font-bold mt-2 mb-4"
+            className="text-3xl font-bold mt-2 mb-4"
           >
             Rejoignez l'aventure ✈️✨!!
           </h2>

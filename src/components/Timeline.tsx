@@ -133,7 +133,7 @@ const Timeline = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-primary font-semibold tracking-wider uppercase text-sm">Programme</span>
-          <h2 ref={titleRef} className="text-4xl font-bold mt-2 mb-4 text-orange-500"  style={{fontFamily:'Montserrat'}}>
+          <h2 ref={titleRef} className="text-3xl font-bold mt-2 mb-4 text-orange-500"  style={{fontFamily:'Montserrat'}}>
             Trois jours d'activités intenses 😏 !!
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
