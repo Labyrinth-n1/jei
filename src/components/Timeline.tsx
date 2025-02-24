@@ -22,7 +22,7 @@ const Timeline = () => {
         { time: "08:00", title: "Chasse aux trésors", description: "", lieu: "UAC", icon: Users },
         { time: "10:00", title: "Panel", description: "Les clés du succès en entreprise", lieu: "Iran 2", icon: Calendar },
         { time: "11:30", title: "Débat", description: "Mon partenaire doit-il avoir un(e) meilleur(e) ami(e) du sexe opposé ?", lieu: "Iran 2", icon: Users },
-        { time: "14:00", title: "Basketball", description: "IFRI vs FSA - Terrain EPAC", lieu: "Terrain EPAC", icon: Trophy },
+        { time: "14:00", title: "Basketball", description: "IFRI vs FSA", lieu: "Terrain EPAC", icon: Trophy },
         { time: "15:30", title: "Football Inter-filières", description: "GL vs SI", lieu: "Terrain ENA", icon: Trophy },
         { time: "17:00", title: "Jeux, Musique et Danse", description: "", lieu: "IFRI", icon: Music },
       ],
