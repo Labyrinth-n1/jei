@@ -10,50 +10,50 @@ gsap.registerPlugin(ScrollTrigger);
 const Timeline = () => {
   const timelineRef = useRef(null);
   const titleRef = useRef(null);
-
   const events = [
     {
       day: "Mercredi",
       date: "26 Février",
       events: [
-        { time: "08:00 - 09:45", title: "Chasse aux trésors", description: "UAC", icon: Users },
-        { time: "10:00 - 11:30", title: "Hors des bancs de l’IFRI", description: "Les clés du succès en entreprise - Iran 2", icon: Calendar },
-        { time: "11:30 - 13:00", title: "Débat", description: "Mon partenaire doit-il avoir un(e) meilleur(e) ami(e) du sexe opposé ? - Iran 2", icon: Users },
-        { time: "13:00 - 14:00", title: "Caravane", description: "UAC", icon: Users },
-        { time: "14:00 - 15:30", title: "Basketball", description: "IFRI vs FSA - Terrain EPAC", icon: Trophy },
-        { time: "15:30 - 17:00", title: "Football Inter-filières", description: "GL vs Sécurité Informatique - Terrain ENA", icon: Trophy },
-        { time: "17:00 - 19:00", title: "Jeux, Musique et Danse", description: "IFRI", icon: Music },
+        { time: "08:00", title: "Chasse aux trésors", description: "UAC", icon: Users },
+        { time: "10:00", title: "Hors des bancs de l’IFRI", description: "Les clés du succès en entreprise - Iran 2", icon: Calendar },
+        { time: "11:30", title: "Débat", description: "Mon partenaire doit-il avoir un(e) meilleur(e) ami(e) du sexe opposé ? - Iran 2", icon: Users },
+        { time: "13:00", title: "Caravane", description: "UAC", icon: Users },
+        { time: "14:00", title: "Basketball", description: "IFRI vs FSA - Terrain EPAC", icon: Trophy },
+        { time: "15:30", title: "Football Inter-filières", description: "GL vs Sécurité Informatique - Terrain ENA", icon: Trophy },
+        { time: "17:00", title: "Jeux, Musique et Danse", description: "IFRI", icon: Music },
       ],
     },
     {
       day: "Jeudi",
       date: "27 Février",
       events: [
-        { time: "08:00 - 08:30", title: "Accueil et lancement officiel de la JEI", description: "Iran 2", icon: Calendar },
-        { time: "08:30 - 09:00", title: "Petit Déjeuner", description: "Iran 2", icon: Users },
-        { time: "09:00 - 13:00", title: "Présentation des projets finalistes du Hack4IFRI", description: "Iran 2", icon: Trophy },
-        { time: "13:00 - 14:00", title: "Foire et animations", description: "Esplanade Idriss Deby", icon: Users },
-        { time: "17:00 - 20:00", title: "Mini-Concert : Prestations, ambiance DJ", description: "Idriss Deby", icon: Music },
+        { time: "08:00", title: "Accueil et lancement officiel de la JEI", description: "Iran 2", icon: Calendar },
+        { time: "08:30", title: "Petit Déjeuner", description: "Iran 2", icon: Users },
+        { time: "09:00", title: "Présentation des projets finalistes du Hack4IFRI", description: "Iran 2", icon: Trophy },
+        { time: "13:00", title: "Foire et animations", description: "Esplanade Idriss Deby", icon: Users },
+        { time: "17:00", title: "Mini-Concert : Prestations, ambiance DJ", description: "Idriss Deby", icon: Music },
       ],
     },
     {
       day: "Vendredi",
       date: "28 Février",
       events: [
-        { time: "08:00 - 08:40", title: "Appel et embarquement", description: "", icon: Users },
-        { time: "09:00 - 11:00", title: "Départ pour le Village de Kirikou", description: "Grand Popo", icon: MapPin },
-        { time: "11:00 - 12:00", title: "Arrivée et installation", description: "", icon: Calendar },
+        { time: "08:00", title: "Appel et embarquement", description: "", icon: Users },
+        { time: "09:00", title: "Départ à 8h", description: "Grand Popo", icon: MapPin },
+        { time: "11:00", title: "Arrivée et installation", description: "", icon: Calendar },
         { 
-          time: "12:00 - 15:00", 
+          time: "12:00", 
           title: "Activités de détente et jeux collectif + Déjeuner", 
           description: "Ludo, Uno, Loup-Garou, Babyfoot, Cartes, Awalé, Dames, etc.", 
           icon: Users 
         },
-        { time: "15:00 - 18:00", title: "Ambiance DJ", description: "Musique, danse et animations", icon: Music },
-        { time: "18:00 - 20:00", title: "Rangement et retour au campus", description: "", icon: Users },
+        { time: "15:00", title: "Ambiance DJ", description: "Musique, danse et animations", icon: Music },
+        { time: "18:00", title: "Rangement et retour au campus", description: "", icon: Users },
       ],
     },
   ];
+  
   
 
   useEffect(() => {
