@@ -43,7 +43,7 @@ const Timeline = () => {
       date: "28 Février",
       events: [
         { time: "08:00", title: "Appel et embarquement", description: "", lieu: "Campus", icon: Users },
-        { time: "09:00", title: "Départ à 8h", description: "", lieu: "", icon: MapPin },
+        { time: "09:00", title: "Départ pour le village de Kirikou", description: "", lieu: "", icon: MapPin },
         { time: "11:00", title: "Arrivée et installation", description: "", lieu: "Grand Popo", icon: Calendar },
         { 
           time: "12:00", 
