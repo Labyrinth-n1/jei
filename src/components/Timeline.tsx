@@ -137,7 +137,7 @@ const Timeline = () => {
             Trois jours d'activités intenses 😏 !!
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Un programme riche en événements pour tous les goûts 🤭
+            Un programme riche en événements pour tous les goûts ...
           </p>
         </div>
 

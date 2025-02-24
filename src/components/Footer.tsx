@@ -20,25 +20,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
-            <h3 
-              style={{fontFamily:'Montserrat'}} 
-               className="font-bold text-lg mb-6">Suivez-nous</h3>
-            <div className="flex gap-6">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-primary transition-colors"
-              >
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-primary transition-colors"
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-            </div>
-          </div>
+          
         </div>
 
         <div className="border-t mt-16 pt-8 text-center text-gray-600">
