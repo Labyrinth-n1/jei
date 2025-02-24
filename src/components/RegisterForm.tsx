@@ -20,7 +20,7 @@ const RegisterForm = () => {
 
     // Construire le message selon l'option sélectionnée
     let message = "";
-    const baseMessage = `Coucou Elziana, je suis ${name}, je veux prendre un ticket de `;
+    const baseMessage = `Coucou Péniel, je suis ${name}, je veux prendre un ticket de `;
 
     if (selectedOption === "Concert") {
       message = baseMessage + "2500 FCFA !!";
@@ -29,7 +29,7 @@ const RegisterForm = () => {
     }
 
     // URL WhatsApp
-    const phoneNumber = "+22944921119";
+    const phoneNumber = "22961555006";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     // Redirection vers WhatsApp

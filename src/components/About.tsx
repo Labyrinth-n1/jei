@@ -51,7 +51,7 @@ const About = () => {
     {
       icon: MapPin,
       title: "Excursion",
-      description: "Journée détente à à Hotel Awale, Grand-Popo",
+      description: "Journée détente au Village de Kirikou, Grand-Popo",
       color: " #fc7f07",
       icolor: " #0e885a",
       bg: aesth2,
