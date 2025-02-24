@@ -22,31 +22,6 @@ const Footer = () => {
 
           <div>
             <h3 
-               style={{fontFamily:'Montserrat'}} 
-               className="font-bold text-lg mb-6">Contact</h3>
-            <div className="space-y-4">
-
-              <a
-                href="https://wa.me/22962658165?text=Hey%20😊%2C%20comment%20tu%20vas%20%3F%20Je%20veux%20avoir%20des%20informations%20suppl%C3%A9mentaires%20sur%20la%20JEI."
-                className="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Phone className="h-5 w-5" />
-                <span>+229 62 65 81 65</span>
-              </a>
-              <a
-                href="mailto:contact@jei.com"
-                className="flex items-center gap-3 text-gray-600 hover:text-primary transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-                <span>contact@jei.com</span>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h3 
               style={{fontFamily:'Montserrat'}} 
                className="font-bold text-lg mb-6">Suivez-nous</h3>
             <div className="flex gap-6">

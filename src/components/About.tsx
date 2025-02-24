@@ -132,7 +132,7 @@ const About = () => {
               marginTop: "30px",
               color: "#0e885a",
             }}
-            className="text-4xl font-bold mt-2 mb-4"
+            className="text-3xl font-bold mt-2 mb-4"
           >
             {Array.from("Qu'est-ce que la JEI 🤔?").map((char, index) => (
               <span
